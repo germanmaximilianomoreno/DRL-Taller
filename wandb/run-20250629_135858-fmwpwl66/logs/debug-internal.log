@@ -1,0 +1,16 @@
+{"time":"2025-06-29T13:58:58.5667534-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"c:\\Users\\germa\\OneDrive\\Escritorio\\Taller_DRL\\wandb\\run-20250629_135858-fmwpwl66\\logs\\debug-core.log"}
+{"time":"2025-06-29T13:58:58.9119925-03:00","level":"INFO","msg":"stream: created new stream","id":"fmwpwl66"}
+{"time":"2025-06-29T13:58:58.9120743-03:00","level":"INFO","msg":"stream: started","id":"fmwpwl66"}
+{"time":"2025-06-29T13:58:58.9120743-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"fmwpwl66"}
+{"time":"2025-06-29T13:58:58.9120743-03:00","level":"INFO","msg":"handler: started","stream_id":"fmwpwl66"}
+{"time":"2025-06-29T13:58:58.9120743-03:00","level":"INFO","msg":"sender: started","stream_id":"fmwpwl66"}
+{"time":"2025-06-29T13:58:59.2376733-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-29T14:00:28.8868352-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-29T14:00:28.8868352-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-29T14:00:29.6753395-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-29T14:00:29.8954525-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 347-347","runtime_seconds":0.2247572}],"total_operations":1}}
+{"time":"2025-06-29T14:00:30.6899313-03:00","level":"INFO","msg":"stream: closing","id":"fmwpwl66"}
+{"time":"2025-06-29T14:00:30.6899313-03:00","level":"INFO","msg":"handler: closed","stream_id":"fmwpwl66"}
+{"time":"2025-06-29T14:00:30.6899313-03:00","level":"INFO","msg":"sender: closed","stream_id":"fmwpwl66"}
+{"time":"2025-06-29T14:00:30.6899313-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fmwpwl66"}
+{"time":"2025-06-29T14:00:30.6899313-03:00","level":"INFO","msg":"stream: closed","id":"fmwpwl66"}

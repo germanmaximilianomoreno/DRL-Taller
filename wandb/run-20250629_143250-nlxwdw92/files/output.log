@@ -1,0 +1,110 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7.9      |
+|    ep_rew_mean        | 0.04     |
+| time/                 |          |
+|    fps                | 865      |
+|    iterations         | 100      |
+|    time_elapsed       | 1        |
+|    total_timesteps    | 1600     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | -0.477   |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 99       |
+|    policy_loss        | -0.0394  |
+|    value_loss         | 0.00172  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7.96     |
+|    ep_rew_mean        | 0.01     |
+| time/                 |          |
+|    fps                | 825      |
+|    iterations         | 200      |
+|    time_elapsed       | 3        |
+|    total_timesteps    | 3200     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | -0.02    |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 199      |
+|    policy_loss        | 0.000549 |
+|    value_loss         | 1.9e-05  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 6.91     |
+|    ep_rew_mean        | 0.02     |
+| time/                 |          |
+|    fps                | 828      |
+|    iterations         | 300      |
+|    time_elapsed       | 5        |
+|    total_timesteps    | 4800     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | nan      |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 299      |
+|    policy_loss        | -0.0169  |
+|    value_loss         | 0.000156 |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7.82     |
+|    ep_rew_mean        | 0.01     |
+| time/                 |          |
+|    fps                | 835      |
+|    iterations         | 400      |
+|    time_elapsed       | 7        |
+|    total_timesteps    | 6400     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | nan      |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 399      |
+|    policy_loss        | -0.0117  |
+|    value_loss         | 8.65e-05 |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7.19     |
+|    ep_rew_mean        | 0.01     |
+| time/                 |          |
+|    fps                | 843      |
+|    iterations         | 500      |
+|    time_elapsed       | 9        |
+|    total_timesteps    | 8000     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | -135     |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 499      |
+|    policy_loss        | -0.00128 |
+|    value_loss         | 3.55e-06 |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 9.33     |
+|    ep_rew_mean        | 0.04     |
+| time/                 |          |
+|    fps                | 847      |
+|    iterations         | 600      |
+|    time_elapsed       | 11       |
+|    total_timesteps    | 9600     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | -499     |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 599      |
+|    policy_loss        | 0.00143  |
+|    value_loss         | 4.21e-05 |
+------------------------------------
+C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\site-packages\stable_baselines3\common\evaluation.py:67: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+
+Recompensa promedio: 1.0, desviación estándar: 0.0
+Tiempo total de entrenamiento: 11.80 segundos

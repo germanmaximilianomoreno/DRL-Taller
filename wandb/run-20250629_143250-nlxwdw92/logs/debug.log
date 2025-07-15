@@ -1,0 +1,28 @@
+2025-06-29 14:32:50,373 INFO    MainThread:19200 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-06-29 14:32:50,373 INFO    MainThread:19200 [wandb_setup.py:_flush():81] Configure stats pid to 19200
+2025-06-29 14:32:50,373 INFO    MainThread:19200 [wandb_setup.py:_flush():81] Loading settings from C:\Users\germa\.config\wandb\settings
+2025-06-29 14:32:50,373 INFO    MainThread:19200 [wandb_setup.py:_flush():81] Loading settings from c:\Users\germa\OneDrive\Escritorio\Taller_DRL\wandb\settings
+2025-06-29 14:32:50,373 INFO    MainThread:19200 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-06-29 14:32:50,373 INFO    MainThread:19200 [wandb_init.py:setup_run_log_directory():703] Logging user logs to c:\Users\germa\OneDrive\Escritorio\Taller_DRL\wandb\run-20250629_143250-nlxwdw92\logs\debug.log
+2025-06-29 14:32:50,374 INFO    MainThread:19200 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to c:\Users\germa\OneDrive\Escritorio\Taller_DRL\wandb\run-20250629_143250-nlxwdw92\logs\debug-internal.log
+2025-06-29 14:32:50,374 INFO    MainThread:19200 [wandb_init.py:init():831] calling init triggers
+2025-06-29 14:32:50,374 INFO    MainThread:19200 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'env': 'FrozenLake-v1', 'algorithm': 'A2C', 'policy': 'MlpPolicy', 'learning_rate': 0.0001, 'gamma': 0.99, 'n_steps': 16, 'vf_coef': 0.5, 'ent_coef': 0.01, 'max_grad_norm': 0.5, '_wandb': {}}
+2025-06-29 14:32:50,374 INFO    MainThread:19200 [wandb_init.py:init():872] starting backend
+2025-06-29 14:32:50,595 INFO    MainThread:19200 [wandb_init.py:init():875] sending inform_init request
+2025-06-29 14:32:50,618 INFO    MainThread:19200 [wandb_init.py:init():883] backend started and connected
+2025-06-29 14:32:50,620 INFO    MainThread:19200 [wandb_init.py:init():956] updated telemetry
+2025-06-29 14:32:50,659 INFO    MainThread:19200 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-06-29 14:32:51,532 INFO    MainThread:19200 [wandb_init.py:init():1032] starting run threads in backend
+2025-06-29 14:32:51,699 INFO    MainThread:19200 [wandb_run.py:_console_start():2453] atexit reg
+2025-06-29 14:32:51,699 INFO    MainThread:19200 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-06-29 14:32:51,699 INFO    MainThread:19200 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-06-29 14:32:51,699 INFO    MainThread:19200 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-06-29 14:32:51,702 INFO    MainThread:19200 [wandb_init.py:init():1078] run started, returning control to user process
+2025-06-29 14:33:22,843 INFO    MainThread:19200 [wandb_run.py:_finish():2219] finishing run germanmorenohotmail-com-uner/frozenlake_rl/nlxwdw92
+2025-06-29 14:33:22,844 INFO    MainThread:19200 [wandb_run.py:_atexit_cleanup():2418] got exitcode: 0
+2025-06-29 14:33:22,844 INFO    MainThread:19200 [wandb_run.py:_restore():2400] restore
+2025-06-29 14:33:22,844 INFO    MainThread:19200 [wandb_run.py:_restore():2406] restore done
+2025-06-29 14:33:24,198 INFO    MainThread:19200 [wandb_run.py:_footer_history_summary_info():4000] rendering history
+2025-06-29 14:33:24,198 INFO    MainThread:19200 [wandb_run.py:_footer_history_summary_info():4032] rendering summary
+2025-06-29 14:33:24,198 INFO    MainThread:19200 [wandb_run.py:_footer_sync_info():3961] logging synced files

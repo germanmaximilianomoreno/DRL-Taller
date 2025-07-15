@@ -1,0 +1,120 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7.55     |
+|    ep_rew_mean        | 0.03     |
+| time/                 |          |
+|    fps                | 814      |
+|    iterations         | 100      |
+|    time_elapsed       | 1        |
+|    total_timesteps    | 1600     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | -207     |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 99       |
+|    policy_loss        | -0.0191  |
+|    value_loss         | 0.00106  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7.59     |
+|    ep_rew_mean        | 0.02     |
+| time/                 |          |
+|    fps                | 828      |
+|    iterations         | 200      |
+|    time_elapsed       | 3        |
+|    total_timesteps    | 3200     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | -0.137   |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 199      |
+|    policy_loss        | -0.00838 |
+|    value_loss         | 6.7e-05  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7.17     |
+|    ep_rew_mean        | 0.03     |
+| time/                 |          |
+|    fps                | 847      |
+|    iterations         | 300      |
+|    time_elapsed       | 5        |
+|    total_timesteps    | 4800     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | 0.0802   |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 299      |
+|    policy_loss        | 0.395    |
+|    value_loss         | 0.272    |
+------------------------------------
+-------------------------------------
+| rollout/              |           |
+|    ep_len_mean        | 7.16      |
+|    ep_rew_mean        | 0         |
+| time/                 |           |
+|    fps                | 851       |
+|    iterations         | 400       |
+|    time_elapsed       | 7         |
+|    total_timesteps    | 6400      |
+| train/                |           |
+|    entropy_loss       | -1.39     |
+|    explained_variance | -182      |
+|    learning_rate      | 0.0001    |
+|    n_updates          | 399       |
+|    policy_loss        | -0.000105 |
+|    value_loss         | 4.21e-08  |
+-------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7        |
+|    ep_rew_mean        | 0.03     |
+| time/                 |          |
+|    fps                | 851      |
+|    iterations         | 500      |
+|    time_elapsed       | 9        |
+|    total_timesteps    | 8000     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | -47      |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 499      |
+|    policy_loss        | -0.00637 |
+|    value_loss         | 6.16e-05 |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 7.17     |
+|    ep_rew_mean        | 0.02     |
+| time/                 |          |
+|    fps                | 856      |
+|    iterations         | 600      |
+|    time_elapsed       | 11       |
+|    total_timesteps    | 9600     |
+| train/                |          |
+|    entropy_loss       | -1.39    |
+|    explained_variance | -6.69    |
+|    learning_rate      | 0.0001   |
+|    n_updates          | 599      |
+|    policy_loss        | -0.00824 |
+|    value_loss         | 5.04e-05 |
+------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\wrappers\rendering.py", line 303, in __init__
+    import moviepy  # noqa: F401
+    ^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'moviepy'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\germa\OneDrive\Escritorio\Taller_DRL\frozenlake_a2c\frozenlake_a2c.py", line 83, in <module>
+    eval_env = RecordVideo(
+               ^^^^^^^^^^^^
+  File "C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium\wrappers\rendering.py", line 305, in __init__
+    raise error.DependencyNotInstalled(
+gymnasium.error.DependencyNotInstalled: MoviePy is not installed, run `pip install "gymnasium[other]"`

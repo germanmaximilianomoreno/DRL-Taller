@@ -1,0 +1,16 @@
+{"time":"2025-06-29T15:26:16.3200002-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250629_152616-fikgunpg\\logs\\debug-core.log"}
+{"time":"2025-06-29T15:26:16.6878511-03:00","level":"INFO","msg":"stream: created new stream","id":"fikgunpg"}
+{"time":"2025-06-29T15:26:16.6878511-03:00","level":"INFO","msg":"stream: started","id":"fikgunpg"}
+{"time":"2025-06-29T15:26:16.6878511-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"fikgunpg"}
+{"time":"2025-06-29T15:26:16.6878511-03:00","level":"INFO","msg":"handler: started","stream_id":"fikgunpg"}
+{"time":"2025-06-29T15:26:16.6878511-03:00","level":"INFO","msg":"sender: started","stream_id":"fikgunpg"}
+{"time":"2025-06-29T15:26:16.9866219-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-29T15:27:13.97431-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-29T15:27:13.97431-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-29T15:27:14.9924678-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.7933424,"progress":"231B/231B"},{"desc":"uploading config.yaml","runtime_seconds":0.4859306,"progress":"785B/785B"}],"total_operations":2}}
+{"time":"2025-06-29T15:27:15.2480731-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-29T15:27:15.5422075-03:00","level":"INFO","msg":"stream: closing","id":"fikgunpg"}
+{"time":"2025-06-29T15:27:15.5422075-03:00","level":"INFO","msg":"handler: closed","stream_id":"fikgunpg"}
+{"time":"2025-06-29T15:27:15.5422075-03:00","level":"INFO","msg":"sender: closed","stream_id":"fikgunpg"}
+{"time":"2025-06-29T15:27:15.5422075-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fikgunpg"}
+{"time":"2025-06-29T15:27:15.5422075-03:00","level":"INFO","msg":"stream: closed","id":"fikgunpg"}

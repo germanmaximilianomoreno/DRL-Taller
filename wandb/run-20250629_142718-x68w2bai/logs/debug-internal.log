@@ -1,0 +1,16 @@
+{"time":"2025-06-29T14:27:18.307234-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"c:\\Users\\germa\\OneDrive\\Escritorio\\Taller_DRL\\wandb\\run-20250629_142718-x68w2bai\\logs\\debug-core.log"}
+{"time":"2025-06-29T14:27:18.702757-03:00","level":"INFO","msg":"stream: created new stream","id":"x68w2bai"}
+{"time":"2025-06-29T14:27:18.702757-03:00","level":"INFO","msg":"stream: started","id":"x68w2bai"}
+{"time":"2025-06-29T14:27:18.702757-03:00","level":"INFO","msg":"handler: started","stream_id":"x68w2bai"}
+{"time":"2025-06-29T14:27:18.702757-03:00","level":"INFO","msg":"sender: started","stream_id":"x68w2bai"}
+{"time":"2025-06-29T14:27:18.702757-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"x68w2bai"}
+{"time":"2025-06-29T14:27:18.983665-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-29T14:28:54.7550389-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-29T14:28:54.7550389-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-29T14:28:55.5502762-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-29T14:28:55.7765234-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.2261281}],"total_operations":1}}
+{"time":"2025-06-29T14:28:55.814956-03:00","level":"INFO","msg":"stream: closing","id":"x68w2bai"}
+{"time":"2025-06-29T14:28:55.814956-03:00","level":"INFO","msg":"handler: closed","stream_id":"x68w2bai"}
+{"time":"2025-06-29T14:28:55.814956-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"x68w2bai"}
+{"time":"2025-06-29T14:28:55.814956-03:00","level":"INFO","msg":"sender: closed","stream_id":"x68w2bai"}
+{"time":"2025-06-29T14:28:55.814956-03:00","level":"INFO","msg":"stream: closed","id":"x68w2bai"}
