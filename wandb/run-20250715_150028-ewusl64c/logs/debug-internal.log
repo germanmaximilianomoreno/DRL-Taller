@@ -1,0 +1,16 @@
+{"time":"2025-07-15T15:00:28.4873841-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250715_150028-ewusl64c\\logs\\debug-core.log"}
+{"time":"2025-07-15T15:00:28.9043359-03:00","level":"INFO","msg":"stream: created new stream","id":"ewusl64c"}
+{"time":"2025-07-15T15:00:28.9043359-03:00","level":"INFO","msg":"stream: started","id":"ewusl64c"}
+{"time":"2025-07-15T15:00:28.9043359-03:00","level":"INFO","msg":"handler: started","stream_id":"ewusl64c"}
+{"time":"2025-07-15T15:00:28.9043359-03:00","level":"INFO","msg":"sender: started","stream_id":"ewusl64c"}
+{"time":"2025-07-15T15:00:28.9043359-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"ewusl64c"}
+{"time":"2025-07-15T15:00:29.3515649-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-15T15:01:48.137773-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-15T15:01:48.137773-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-15T15:01:49.1404861-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.4538996,"progress":"812B/812B"}],"total_operations":1}}
+{"time":"2025-07-15T15:01:49.3486117-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-15T15:01:49.6366938-03:00","level":"INFO","msg":"stream: closing","id":"ewusl64c"}
+{"time":"2025-07-15T15:01:49.6366938-03:00","level":"INFO","msg":"handler: closed","stream_id":"ewusl64c"}
+{"time":"2025-07-15T15:01:49.6366938-03:00","level":"INFO","msg":"sender: closed","stream_id":"ewusl64c"}
+{"time":"2025-07-15T15:01:49.6366938-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ewusl64c"}
+{"time":"2025-07-15T15:01:49.6377879-03:00","level":"INFO","msg":"stream: closed","id":"ewusl64c"}

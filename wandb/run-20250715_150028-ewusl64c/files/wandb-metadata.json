@@ -1,0 +1,43 @@
+{
+  "os":  "Windows-10-10.0.22621-SP0",
+  "python":  "CPython 3.11.3",
+  "startedAt":  "2025-07-15T18:00:28.485778Z",
+  "program":  "d:\\Proyectos\\Taller_DRL\\frozenlake_ppo\\frozenlake_ppo.py",
+  "codePath":  "frozenlake_ppo\\frozenlake_ppo.py",
+  "git":  {
+    "remote":  "https://github.com/germanmaximilianomoreno/DRL-Taller.git",
+    "commit":  "d2a1f7a41aaa9e3287d41906c022d7d47b36732e"
+  },
+  "email":  "germanmorenohotmail.com@gmail.com",
+  "root":  "d:\\Proyectos\\Taller_DRL",
+  "host":  "DESKTOP-L86NSLN",
+  "executable":  "C:\\Users\\germa\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "codePathLocal":  "frozenlake_ppo\\frozenlake_ppo.py",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce GTX 960",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1000186310656",
+      "used":  "889180504064"
+    }
+  },
+  "memory":  {
+    "total":  "17026211840"
+  },
+  "cpu":  {
+    "count":  6,
+    "countLogical":  12
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce GTX 960",
+      "memoryTotal":  "4294967296",
+      "cudaCores":  1024,
+      "architecture":  "Maxwell",
+      "uuid":  "GPU-2bcb6596-b77d-37a6-070e-b314c9feb211"
+    }
+  ],
+  "cudaVersion":  "12.6"
+}
