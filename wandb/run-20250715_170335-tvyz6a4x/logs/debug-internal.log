@@ -1,0 +1,16 @@
+{"time":"2025-07-15T17:03:35.3021224-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250715_170335-tvyz6a4x\\logs\\debug-core.log"}
+{"time":"2025-07-15T17:03:35.636034-03:00","level":"INFO","msg":"stream: created new stream","id":"tvyz6a4x"}
+{"time":"2025-07-15T17:03:35.636034-03:00","level":"INFO","msg":"stream: started","id":"tvyz6a4x"}
+{"time":"2025-07-15T17:03:35.636034-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"tvyz6a4x"}
+{"time":"2025-07-15T17:03:35.6366112-03:00","level":"INFO","msg":"sender: started","stream_id":"tvyz6a4x"}
+{"time":"2025-07-15T17:03:35.6366112-03:00","level":"INFO","msg":"handler: started","stream_id":"tvyz6a4x"}
+{"time":"2025-07-15T17:03:35.9692615-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-15T17:04:27.2450108-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-15T17:04:27.2450108-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-15T17:04:28.2514987-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.7721977,"progress":"169.4KB/169.4KB"}],"total_operations":1}}
+{"time":"2025-07-15T17:04:28.2629639-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-15T17:04:28.9116758-03:00","level":"INFO","msg":"stream: closing","id":"tvyz6a4x"}
+{"time":"2025-07-15T17:04:28.9116758-03:00","level":"INFO","msg":"handler: closed","stream_id":"tvyz6a4x"}
+{"time":"2025-07-15T17:04:28.9116758-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tvyz6a4x"}
+{"time":"2025-07-15T17:04:28.9116758-03:00","level":"INFO","msg":"sender: closed","stream_id":"tvyz6a4x"}
+{"time":"2025-07-15T17:04:28.9116758-03:00","level":"INFO","msg":"stream: closed","id":"tvyz6a4x"}

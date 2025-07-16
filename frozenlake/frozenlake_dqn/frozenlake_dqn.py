@@ -33,7 +33,7 @@ class RewardLoggerCallback(BaseCallback):
         return True
 
 # === CREAR ENTORNO ===
-env = gym.make("FrozenLake-v1", is_slippery=True)
+env = gym.make("FrozenLake-v1", is_slippery=False)
 env = Monitor(env)
 
 # === ENTRENAMIENTO ===
@@ -58,15 +58,15 @@ model.learn(total_timesteps=10000, callback=reward_callback)
 end_time = time.time()
 
 # === EVALUACIÓN ===
-eval_env = Monitor(gym.make("FrozenLake-v1", is_slippery=True, render_mode="human"))
+eval_env = Monitor(gym.make("FrozenLake-v1", is_slippery=False, render_mode="human"))
 mean_reward, std_reward = evaluate_policy(model, eval_env, n_eval_episodes=10)
 print(f"\nRecompensa promedio: {mean_reward}, desviación estándar: {std_reward}")
 print(f"Tiempo total de entrenamiento: {end_time - start_time:.2f} segundos")
 
 wandb.log({
-    "mean_reward_eval": mean_reward,
-    "std_reward_eval": std_reward,
-    "training_time_seconds": end_time - start_time
+    "mean_reward_eval": mean_reward, #Recompensa promedio
+    "std_reward_eval": std_reward, #Desviación estándar de recompensa
+    "training_time_seconds": end_time - start_time #Tiempo total de entrenamiento
 })
 
 # === DEMOSTRACIÓN DEL AGENTE ENTRENADO ===

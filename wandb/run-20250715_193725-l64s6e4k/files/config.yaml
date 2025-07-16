@@ -1,0 +1,47 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.11.3
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+            "2":
+                - 1
+                - 2
+                - 3
+                - 11
+                - 49
+            "3":
+                - 2
+                - 13
+                - 16
+                - 55
+            "4": 3.11.3
+            "5": 0.20.1
+            "8":
+                - 3
+            "12": 0.20.1
+            "13": windows-amd64
+batch_size:
+    value: 64
+buffer_size:
+    value: 20000
+exploration_final_eps:
+    value: 0.01
+exploration_fraction:
+    value: 0.2
+gamma:
+    value: 0.99
+learning_rate:
+    value: 0.0005
+learning_starts:
+    value: 500
+policy:
+    value: MlpPolicy
+target_update_interval:
+    value: 250
+train_freq:
+    value: 1
