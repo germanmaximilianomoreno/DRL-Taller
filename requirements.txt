@@ -1,4 +1,5 @@
 gymnasium
 stable-baselines3
-matplotlib
 psutil
+wandb
+python-dotenv
