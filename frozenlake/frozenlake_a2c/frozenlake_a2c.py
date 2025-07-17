@@ -60,13 +60,12 @@ model = A2C(
 # === ENTRENAMIENTO CON MEDICIÓN DE TIEMPO ===
 reward_callback = RewardLoggerCallback()
 start_time = time.time()
-model.learn(total_timesteps=100000, callback=reward_callback)
+model.learn(total_timesteps=params["step"], callback=reward_callback)
 end_time = time.time()
 training_time = end_time - start_time
 
 # === EVALUACIÓN ===
-eval_env = Monitor(gym.make("FrozenLake-v1", is_slippery=True))
-mean_reward, std_reward = evaluate_policy(model, eval_env, n_eval_episodes=10)
+mean_reward, std_reward = evaluate_policy(model, env, n_eval_episodes=10)
 
 # === RESULTADOS EN CONSOLA ===
 print("\nRESULTADOS DE EVALUACIÓN ===")
@@ -79,9 +78,8 @@ wandb.log({
     "mean_reward_eval": mean_reward,
     "std_reward_eval": std_reward,
     "training_time_seconds": training_time
-}, step=100000)
+}, step=params["step"])
 
 # === CIERRE DE ENTORNOS Y SESIÓN ===
 env.close()
-eval_env.close()
 wandb.finish()

@@ -7,5 +7,7 @@ params = {
     "n_steps": 5,          
     "vf_coef": 0.25,
     "ent_coef": 0.01,
-    "max_grad_norm": 0.5
+    "max_grad_norm": 0.5,
+    "step": 100000,
+    "n_eval_episodes": 100,
 }
