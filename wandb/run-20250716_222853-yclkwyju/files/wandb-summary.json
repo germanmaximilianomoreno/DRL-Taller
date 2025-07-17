@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":15},"_runtime":15.0111387,"_step":10000,"_timestamp":1.7527157487083156e+09,"Recompensa_por_episodio":0,"training_time_seconds":12.837440729141235,"Intentos":10236,"mean_reward_eval":0.2,"std_reward_eval":0.4000000000000001}

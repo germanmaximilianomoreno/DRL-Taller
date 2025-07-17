@@ -1,0 +1,106 @@
+Using cpu device
+Wrapping the env in a DummyVecEnv.
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 7.43     |
+|    ep_rew_mean     | 0.01     |
+| time/              |          |
+|    fps             | 1446     |
+|    iterations      | 1        |
+|    time_elapsed    | 1        |
+|    total_timesteps | 2048     |
+---------------------------------
+---------------------------------------
+| rollout/                |           |
+|    ep_len_mean          | 8.49      |
+|    ep_rew_mean          | 0         |
+| time/                   |           |
+|    fps                  | 896       |
+|    iterations           | 2         |
+|    time_elapsed         | 4         |
+|    total_timesteps      | 4096      |
+| train/                  |           |
+|    approx_kl            | 0.0128149 |
+|    clip_fraction        | 0.0463    |
+|    clip_range           | 0.2       |
+|    entropy_loss         | -1.38     |
+|    explained_variance   | -3.72     |
+|    learning_rate        | 0.0003    |
+|    loss                 | -0.0235   |
+|    n_updates            | 10        |
+|    policy_gradient_loss | -0.00704  |
+|    value_loss           | 0.0098    |
+---------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 9.56         |
+|    ep_rew_mean          | 0.04         |
+| time/                   |              |
+|    fps                  | 836          |
+|    iterations           | 3            |
+|    time_elapsed         | 7            |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 0.0097759515 |
+|    clip_fraction        | 0.0682       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.36        |
+|    explained_variance   | -0.122       |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.0318      |
+|    n_updates            | 20           |
+|    policy_gradient_loss | -0.0111      |
+|    value_loss           | 0.0102       |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 7.49        |
+|    ep_rew_mean          | 0           |
+| time/                   |             |
+|    fps                  | 830         |
+|    iterations           | 4           |
+|    time_elapsed         | 9           |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.008326212 |
+|    clip_fraction        | 0.062       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.33       |
+|    explained_variance   | 0.0804      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0359     |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.00933    |
+|    value_loss           | 0.0224      |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 8.7         |
+|    ep_rew_mean          | 0.02        |
+| time/                   |             |
+|    fps                  | 823         |
+|    iterations           | 5           |
+|    time_elapsed         | 12          |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.013693811 |
+|    clip_fraction        | 0.149       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.31       |
+|    explained_variance   | 0.11        |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.0116      |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.0104     |
+|    value_loss           | 0.0136      |
+-----------------------------------------
+Traceback (most recent call last):
+  File "d:\Proyectos\Taller_DRL\frozenlake\frozenlake_ppo\frozenlake_ppo.py", line 72, in <module>
+    print("\n✅ RESULTADOS DE EVALUACIÓN ===")
+  File "C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\console_capture.py", line 147, in write_with_callbacks
+    n = orig_write(s)
+        ^^^^^^^^^^^^^
+  File "C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>

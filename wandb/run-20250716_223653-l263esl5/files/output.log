@@ -1,0 +1,106 @@
+Using cpu device
+Wrapping the env in a DummyVecEnv.
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 7.77     |
+|    ep_rew_mean     | 0.01     |
+| time/              |          |
+|    fps             | 1500     |
+|    iterations      | 1        |
+|    time_elapsed    | 1        |
+|    total_timesteps | 2048     |
+---------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 8.55        |
+|    ep_rew_mean          | 0.03        |
+| time/                   |             |
+|    fps                  | 1024        |
+|    iterations           | 2           |
+|    time_elapsed         | 3           |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.013259793 |
+|    clip_fraction        | 0.0553      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.38       |
+|    explained_variance   | -9.56       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0316     |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.00698    |
+|    value_loss           | 0.00473     |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 7.81        |
+|    ep_rew_mean          | 0.01        |
+| time/                   |             |
+|    fps                  | 912         |
+|    iterations           | 3           |
+|    time_elapsed         | 6           |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.004937414 |
+|    clip_fraction        | 0.00937     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.37       |
+|    explained_variance   | 0.0518      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0282     |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.00461    |
+|    value_loss           | 0.0153      |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 6.96        |
+|    ep_rew_mean          | 0           |
+| time/                   |             |
+|    fps                  | 848         |
+|    iterations           | 4           |
+|    time_elapsed         | 9           |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.007999552 |
+|    clip_fraction        | 0.018       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.37       |
+|    explained_variance   | 0.0251      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.00726     |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0048     |
+|    value_loss           | 0.00888     |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 7.99         |
+|    ep_rew_mean          | 0.03         |
+| time/                   |              |
+|    fps                  | 831          |
+|    iterations           | 5            |
+|    time_elapsed         | 12           |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 0.0069587273 |
+|    clip_fraction        | 0.0266       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.35        |
+|    explained_variance   | 0.0365       |
+|    learning_rate        | 0.0003       |
+|    loss                 | -0.0376      |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.0102      |
+|    value_loss           | 0.0059       |
+------------------------------------------
+Traceback (most recent call last):
+  File "d:\Proyectos\Taller_DRL\frozenlake\frozenlake_ppo\Pruebas\prueba.py", line 76, in <module>
+    print("\n✅ RESULTADOS DE EVALUACIÓN ===")
+  File "C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\console_capture.py", line 147, in write_with_callbacks
+    n = orig_write(s)
+        ^^^^^^^^^^^^^
+  File "C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 2: character maps to <undefined>

@@ -28,13 +28,27 @@ wandb.init(
 class RewardLoggerCallback(BaseCallback):
     def __init__(self):
         super().__init__()
+        self.episode_step = 0
+        self.episode_count = 0  # ← contador de episodios
 
     def _on_step(self) -> bool:
         infos = self.locals.get("infos", [])
-        for info in infos:
-            if info and "episode" in info:
-                reward = info["episode"]["r"]
-                wandb.log({"episode_reward": reward, "steps": self.num_timesteps})
+        dones = self.locals.get("dones", [])
+        
+        for idx, info in enumerate(infos):
+            if dones[idx]:  # cuando termina un episodio
+                if "episode" in info:
+                    reward = info["episode"]["r"]
+                    self.episode_count += 1  # ← aumentamos el número de episodio
+                    wandb.log({
+                        "recompensa_por_episodio": reward,
+                        "movimientos_por_episodio": self.episode_step,
+                        "movimientos_globales": self.num_timesteps,
+                        "numero_episodio": self.episode_count
+                    })
+                self.episode_step = 0  # reiniciamos el contador del episodio
+            else:
+                self.episode_step += 1  # contamos los pasos dentro del episodio
         return True
 
 # === ENTORNO DE ENTRENAMIENTO ===
@@ -69,7 +83,7 @@ eval_env = Monitor(gym.make("FrozenLake-v1", is_slippery=True))
 mean_reward, std_reward = evaluate_policy(model, eval_env, n_eval_episodes=params["n_eval_episodes"])
 
 # === MOSTRAR RESULTADOS EN CONSOLA ===
-print("\n✅ RESULTADOS DE EVALUACIÓN ===")
+print("\n RESULTADOS DE EVALUACIÓN ===")
 print(f"Recompensa promedio: {mean_reward:.2f}")
 print(f"Desviación estándar: {std_reward:.2f}")
 print(f"Tiempo total de entrenamiento: {training_time:.2f} segundos")

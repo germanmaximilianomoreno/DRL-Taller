@@ -1,0 +1,101 @@
+Using cpu device
+Wrapping the env in a DummyVecEnv.
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 7.28     |
+|    ep_rew_mean     | 0        |
+| time/              |          |
+|    fps             | 1341     |
+|    iterations      | 1        |
+|    time_elapsed    | 1        |
+|    total_timesteps | 2048     |
+---------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 7.43        |
+|    ep_rew_mean          | 0.01        |
+| time/                   |             |
+|    fps                  | 954         |
+|    iterations           | 2           |
+|    time_elapsed         | 4           |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.014097982 |
+|    clip_fraction        | 0.0608      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.38       |
+|    explained_variance   | -7.27       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0458     |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.0108     |
+|    value_loss           | 0.00969     |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 7.54        |
+|    ep_rew_mean          | 0           |
+| time/                   |             |
+|    fps                  | 878         |
+|    iterations           | 3           |
+|    time_elapsed         | 6           |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.012428617 |
+|    clip_fraction        | 0.179       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.36       |
+|    explained_variance   | 0.0949      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0255     |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.0153     |
+|    value_loss           | 0.0126      |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 6.8         |
+|    ep_rew_mean          | 0.02        |
+| time/                   |             |
+|    fps                  | 841         |
+|    iterations           | 4           |
+|    time_elapsed         | 9           |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.009012868 |
+|    clip_fraction        | 0.053       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.34       |
+|    explained_variance   | -0.36       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0271     |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0118     |
+|    value_loss           | 0.00364     |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 6.9         |
+|    ep_rew_mean          | 0.03        |
+| time/                   |             |
+|    fps                  | 822         |
+|    iterations           | 5           |
+|    time_elapsed         | 12          |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.009664079 |
+|    clip_fraction        | 0.0445      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.33       |
+|    explained_variance   | 0.0635      |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0235     |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.00588    |
+|    value_loss           | 0.0117      |
+-----------------------------------------
+
+ RESULTADOS DE EVALUACIÓN ===
+Recompensa promedio: 0.10
+Desviación estándar: 0.30
+Tiempo total de entrenamiento: 13.67 segundos

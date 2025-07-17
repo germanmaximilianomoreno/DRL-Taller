@@ -9,6 +9,6 @@ params = {
     "max_grad_norm": 0.5,
     "gae_lambda": 0.95,
     "clip_range": 0.2,
-    "step": 100000,
-    "n_eval_episodes": 100,
+    "step": 10000,
+    "n_eval_episodes": 10,
 }

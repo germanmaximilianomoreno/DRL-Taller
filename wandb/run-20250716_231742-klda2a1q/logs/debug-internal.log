@@ -1,0 +1,16 @@
+{"time":"2025-07-16T23:17:42.2846035-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250716_231742-klda2a1q\\logs\\debug-core.log"}
+{"time":"2025-07-16T23:17:42.6700717-03:00","level":"INFO","msg":"stream: created new stream","id":"klda2a1q"}
+{"time":"2025-07-16T23:17:42.6700717-03:00","level":"INFO","msg":"stream: started","id":"klda2a1q"}
+{"time":"2025-07-16T23:17:42.6700717-03:00","level":"INFO","msg":"handler: started","stream_id":"klda2a1q"}
+{"time":"2025-07-16T23:17:42.6700717-03:00","level":"INFO","msg":"sender: started","stream_id":"klda2a1q"}
+{"time":"2025-07-16T23:17:42.6700717-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"klda2a1q"}
+{"time":"2025-07-16T23:17:42.9460487-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-16T23:17:57.110818-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-16T23:17:57.110818-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-16T23:17:57.9293396-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-16T23:17:58.1229632-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-1340, summary, console lines 2-100","runtime_seconds":0.1916561}],"total_operations":1}}
+{"time":"2025-07-16T23:17:58.4859968-03:00","level":"INFO","msg":"stream: closing","id":"klda2a1q"}
+{"time":"2025-07-16T23:17:58.486617-03:00","level":"INFO","msg":"handler: closed","stream_id":"klda2a1q"}
+{"time":"2025-07-16T23:17:58.486617-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"klda2a1q"}
+{"time":"2025-07-16T23:17:58.486617-03:00","level":"INFO","msg":"sender: closed","stream_id":"klda2a1q"}
+{"time":"2025-07-16T23:17:58.4933807-03:00","level":"INFO","msg":"stream: closed","id":"klda2a1q"}

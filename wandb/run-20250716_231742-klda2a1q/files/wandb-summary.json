@@ -1,0 +1,1 @@
+{"std_reward_eval":0.30000000000000004,"numero_episodio":1340,"_timestamp":1.7527186771093166e+09,"_runtime":14.827879,"training_time_seconds":12.689624547958374,"_step":10000,"recompensa_por_episodio":0,"mean_reward_eval":0.1,"intentos_por_episodio":26,"_wandb":{"runtime":14},"intentos_globales":10237}
