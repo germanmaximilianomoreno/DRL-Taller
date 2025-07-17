@@ -1,0 +1,1 @@
+{"gpu_util (%)":1,"cpu (%)":86.6,"ram (%)":61.3,"fps":331.6953093210574,"steps":100000,"_timestamp":1.7527950588546076e+09,"_runtime":303.8453447,"mean_reward_percent":50.3,"elapsed_time_sec":301.48150181770325,"_wandb":{"runtime":303},"training_time_seconds":301.53666615486145,"_step":100000,"gpu_mem (MB)":941}

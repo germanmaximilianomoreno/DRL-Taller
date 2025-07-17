@@ -2,6 +2,8 @@ import os
 import time
 import gymnasium as gym
 import numpy as np
+import psutil
+import GPUtil
 from stable_baselines3 import DQN
 from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.vec_env import DummyVecEnv
@@ -21,7 +23,7 @@ else:
 # === INICIALIZAR WANDB ===
 wandb.init(
     project="frozenlake_rl",
-    name="DQN_FrozenLake",
+    name="DQN_FrozenLake_maxi",
     config=params
 )
 
@@ -32,6 +34,7 @@ class CustomWandbCallback(BaseCallback):
         self.check_freq = check_freq
         self.save_path = save_path
         self.best_mean_reward = -np.inf
+        self.start_time = time.time()
 
     def _on_step(self) -> bool:
         if self.n_calls % self.check_freq == 0:
@@ -43,9 +46,28 @@ class CustomWandbCallback(BaseCallback):
 
             if all_rewards:
                 mean_reward = np.mean(all_rewards[-self.check_freq:])
+                elapsed_time = time.time() - self.start_time
+                fps = self.num_timesteps / elapsed_time if elapsed_time > 0 else 0
+
+                # === USO DE GPU ===
+                gpus = GPUtil.getGPUs()
+                gpu_util = gpus[0].load * 100 if gpus else 0.0
+                gpu_mem = gpus[0].memoryUsed if gpus else 0.0
+
+                # === USO DE CPU y RAM ===
+                cpu_usage = psutil.cpu_percent()
+                ram_usage = psutil.virtual_memory().percent
+
+                # === Log a wandb ===
                 wandb.log({
-                    "mean_reward": mean_reward,
-                    "steps": self.num_timesteps  # Esto es lo que wandb espera para graficar bien
+                    "mean_reward_percent": mean_reward * 100,
+                    "steps": self.num_timesteps,
+                    "elapsed_time_sec": elapsed_time,
+                    "fps": fps,
+                    "gpu_util (%)": gpu_util,
+                    "gpu_mem (MB)": gpu_mem,
+                    "cpu (%)": cpu_usage,
+                    "ram (%)": ram_usage
                 })
 
                 # Guardar el mejor modelo

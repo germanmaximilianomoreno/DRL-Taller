@@ -1,0 +1,16 @@
+{"time":"2025-07-17T19:27:37.2788022-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250717_192737-fhdzpip6\\logs\\debug-core.log"}
+{"time":"2025-07-17T19:27:37.949634-03:00","level":"INFO","msg":"stream: created new stream","id":"fhdzpip6"}
+{"time":"2025-07-17T19:27:37.949634-03:00","level":"INFO","msg":"stream: started","id":"fhdzpip6"}
+{"time":"2025-07-17T19:27:37.949634-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"fhdzpip6"}
+{"time":"2025-07-17T19:27:37.949634-03:00","level":"INFO","msg":"sender: started","stream_id":"fhdzpip6"}
+{"time":"2025-07-17T19:27:37.949634-03:00","level":"INFO","msg":"handler: started","stream_id":"fhdzpip6"}
+{"time":"2025-07-17T19:27:38.2463051-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-17T19:29:53.1102412-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-17T19:29:53.1102412-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-17T19:29:54.120203-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.7713153,"progress":"184B/184B"},{"desc":"uploading config.yaml","runtime_seconds":0.5643917,"progress":"915B/915B"},{"desc":"uploading history steps 89-100, summary, console lines 3027-3401","runtime_seconds":0.4655398}],"total_operations":3}}
+{"time":"2025-07-17T19:29:54.410208-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-17T19:29:54.8571372-03:00","level":"INFO","msg":"stream: closing","id":"fhdzpip6"}
+{"time":"2025-07-17T19:29:54.8571372-03:00","level":"INFO","msg":"handler: closed","stream_id":"fhdzpip6"}
+{"time":"2025-07-17T19:29:54.8571372-03:00","level":"INFO","msg":"sender: closed","stream_id":"fhdzpip6"}
+{"time":"2025-07-17T19:29:54.8571372-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fhdzpip6"}
+{"time":"2025-07-17T19:29:54.8571372-03:00","level":"INFO","msg":"stream: closed","id":"fhdzpip6"}

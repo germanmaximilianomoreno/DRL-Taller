@@ -1,0 +1,16 @@
+{"time":"2025-07-17T20:02:12.9760535-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250717_200212-lzglg88y\\logs\\debug-core.log"}
+{"time":"2025-07-17T20:02:13.4060854-03:00","level":"INFO","msg":"stream: created new stream","id":"lzglg88y"}
+{"time":"2025-07-17T20:02:13.4060854-03:00","level":"INFO","msg":"stream: started","id":"lzglg88y"}
+{"time":"2025-07-17T20:02:13.4060854-03:00","level":"INFO","msg":"handler: started","stream_id":"lzglg88y"}
+{"time":"2025-07-17T20:02:13.4060854-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"lzglg88y"}
+{"time":"2025-07-17T20:02:13.4060854-03:00","level":"INFO","msg":"sender: started","stream_id":"lzglg88y"}
+{"time":"2025-07-17T20:02:13.7379357-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-17T20:04:36.5633713-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-17T20:04:36.5633713-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-17T20:04:37.5779055-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.7622135,"progress":"123.5KB/123.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.7622135,"progress":"334B/334B"},{"desc":"uploading config.yaml","runtime_seconds":0.4291415,"progress":"915B/915B"}],"total_operations":3}}
+{"time":"2025-07-17T20:04:37.7000847-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-17T20:04:38.3612031-03:00","level":"INFO","msg":"stream: closing","id":"lzglg88y"}
+{"time":"2025-07-17T20:04:38.3612031-03:00","level":"INFO","msg":"handler: closed","stream_id":"lzglg88y"}
+{"time":"2025-07-17T20:04:38.3612031-03:00","level":"INFO","msg":"sender: closed","stream_id":"lzglg88y"}
+{"time":"2025-07-17T20:04:38.3612031-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lzglg88y"}
+{"time":"2025-07-17T20:04:38.3612031-03:00","level":"INFO","msg":"stream: closed","id":"lzglg88y"}
