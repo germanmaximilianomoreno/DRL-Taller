@@ -9,6 +9,7 @@ params = {
     "train_freq": 1,                    # Aprende más seguido (cada paso)
     "learning_starts": 500,             # Empieza a aprender más temprano
     "batch_size": 64,                   # Más muestras por batch para mejorar el gradiente
-    "step": 100000,
-    "n_eval_episodes": 100,
+    "steps": 100000,
+    "save_dir" : "./frozenlake/frozenlake_dqn/models",
+    "check_freq" : 1000
 }

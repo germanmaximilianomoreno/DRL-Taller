@@ -8,6 +8,7 @@ params = {
     "vf_coef": 0.25,
     "ent_coef": 0.01,
     "max_grad_norm": 0.5,
-    "step": 100000,
-    "n_eval_episodes": 100,
+    "steps": 100000,
+    "save_dir" : "./frozenlake/frozenlake_a2c/models",
+    "check_freq" : 1000
 }

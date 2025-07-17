@@ -1,0 +1,7 @@
+{"time":"2025-07-17T17:58:16.0074746-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250717_175815-iluwl4ix\\logs\\debug-core.log"}
+{"time":"2025-07-17T17:58:16.674336-03:00","level":"INFO","msg":"stream: created new stream","id":"iluwl4ix"}
+{"time":"2025-07-17T17:58:16.6744687-03:00","level":"INFO","msg":"stream: started","id":"iluwl4ix"}
+{"time":"2025-07-17T17:58:16.6744687-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"iluwl4ix"}
+{"time":"2025-07-17T17:58:16.6751252-03:00","level":"INFO","msg":"handler: started","stream_id":"iluwl4ix"}
+{"time":"2025-07-17T17:58:16.6751252-03:00","level":"INFO","msg":"sender: started","stream_id":"iluwl4ix"}
+{"time":"2025-07-17T17:58:17.0108792-03:00","level":"INFO","msg":"Starting system monitor"}

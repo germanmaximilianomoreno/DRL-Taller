@@ -9,6 +9,7 @@ params = {
     "max_grad_norm": 0.5,
     "gae_lambda": 0.95,
     "clip_range": 0.2,
-    "step": 10000,
-    "n_eval_episodes": 10,
+    "steps": 100000,
+    "save_dir" : "./frozenlake/frozenlake_ppo/models",
+    "check_freq" : 1000
 }

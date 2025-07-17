@@ -1,0 +1,15 @@
+{"time":"2025-07-17T18:20:37.5469585-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250717_182037-lu460wwk\\logs\\debug-core.log"}
+{"time":"2025-07-17T18:20:37.8809343-03:00","level":"INFO","msg":"stream: created new stream","id":"lu460wwk"}
+{"time":"2025-07-17T18:20:37.8809343-03:00","level":"INFO","msg":"stream: started","id":"lu460wwk"}
+{"time":"2025-07-17T18:20:37.8809343-03:00","level":"INFO","msg":"handler: started","stream_id":"lu460wwk"}
+{"time":"2025-07-17T18:20:37.8809343-03:00","level":"INFO","msg":"sender: started","stream_id":"lu460wwk"}
+{"time":"2025-07-17T18:20:37.8809343-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"lu460wwk"}
+{"time":"2025-07-17T18:20:38.3037272-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-17T18:20:38.7734757-03:00","level":"INFO","msg":"stream: closing","id":"lu460wwk"}
+{"time":"2025-07-17T18:20:38.7740007-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-17T18:20:38.7740007-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-17T18:20:39.5583567-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-17T18:20:39.8587112-03:00","level":"INFO","msg":"handler: closed","stream_id":"lu460wwk"}
+{"time":"2025-07-17T18:20:39.8587112-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lu460wwk"}
+{"time":"2025-07-17T18:20:39.8587112-03:00","level":"INFO","msg":"sender: closed","stream_id":"lu460wwk"}
+{"time":"2025-07-17T18:20:39.8587112-03:00","level":"INFO","msg":"stream: closed","id":"lu460wwk"}

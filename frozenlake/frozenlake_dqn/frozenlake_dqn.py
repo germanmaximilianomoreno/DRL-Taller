@@ -1,86 +1,99 @@
+import os
+import time
 import gymnasium as gym
+import numpy as np
 from stable_baselines3 import DQN
 from stable_baselines3.common.monitor import Monitor
+from stable_baselines3.common.vec_env import DummyVecEnv
 from stable_baselines3.common.callbacks import BaseCallback
-from stable_baselines3.common.evaluation import evaluate_policy
-import time
-import wandb
 from dotenv import load_dotenv
-import os
+import wandb
 from config import params
 
 # === CARGAR VARIABLES DE ENTORNO ===
 load_dotenv()
-wandb.login(key=os.getenv("WANDB_API_KEY"))
+wandb_api_key = os.getenv("WANDB_API_KEY")
+if wandb_api_key:
+    wandb.login(key=wandb_api_key)
+else:
+    raise ValueError("WANDB_API_KEY no está definido en el archivo .env")
 
 # === INICIALIZAR WANDB ===
 wandb.init(
-    project="frozenlake_rl",
+    project="prueba_maxi",
     name="DQN_FrozenLake",
     config=params
 )
 
-# === CALLBACK PERSONALIZADO PARA LOGS ===
-class RewardLoggerCallback(BaseCallback):
-    def __init__(self):
-        super().__init__()
-        self.episode_step = 0
-        self.episode_count = 0  # ← contador de episodios
+# === CALLBACK PERSONALIZADO PARA LOG Y GUARDADO DEL MEJOR MODELO ===
+class CustomWandbCallback(BaseCallback):
+    def __init__(self, check_freq, save_path, verbose=1):
+        super().__init__(verbose)
+        self.check_freq = check_freq
+        self.save_path = save_path
+        self.best_mean_reward = -np.inf
 
     def _on_step(self) -> bool:
-        infos = self.locals.get("infos", [])
-        dones = self.locals.get("dones", [])
-        
-        for idx, info in enumerate(infos):
-            if dones[idx]:  # cuando termina un episodio
-                if "episode" in info:
-                    reward = info["episode"]["r"]
-                    self.episode_count += 1  # ← aumentamos el número de episodio
-                    wandb.log({
-                        "recompensa_por_episodio": reward,
-                        "movimientos_por_episodio": self.episode_step,
-                        "movimientos_globales": self.num_timesteps,
-                        "numero_episodio": self.episode_count
-                    })
-                self.episode_step = 0  # reiniciamos el contador del episodio
-            else:
-                self.episode_step += 1  # contamos los pasos dentro del episodio
+        if self.n_calls % self.check_freq == 0:
+            all_rewards = []
+            for env in self.training_env.envs:
+                monitor_env = env.envs[0] if isinstance(env, DummyVecEnv) else env
+                if hasattr(monitor_env, 'get_episode_rewards'):
+                    all_rewards.extend(monitor_env.get_episode_rewards())
+
+            if all_rewards:
+                mean_reward = np.mean(all_rewards[-self.check_freq:])
+                wandb.log({
+                    "mean_reward": mean_reward,
+                    "steps": self.num_timesteps  # Esto es lo que wandb espera para graficar bien
+                })
+
+                # Guardar el mejor modelo
+                if mean_reward > self.best_mean_reward:
+                    self.best_mean_reward = mean_reward
+                    self.model.save(os.path.join(self.save_path, 'best_model'))
+
         return True
 
-# === ENTORNO DE ENTRENAMIENTO ===
-env = Monitor(gym.make("FrozenLake-v1", is_slippery=True))
+# === CONFIGURAR ENTORNO CON MONITOR ===
+def make_env():
+    env = gym.make("FrozenLake-v1", is_slippery=True)
+    env = Monitor(env)  # Log automático de episodios y recompensas
+    return env
 
-# === ENTRENAMIENTO ===
-reward_callback = RewardLoggerCallback()
+env = DummyVecEnv([make_env])  # Se necesita DummyVecEnv incluso para un solo entorno
+
+# === CREAR MODELO DQN ===
 model = DQN(
     policy=params["policy"],
     env=env,
     learning_rate=params["learning_rate"],
     gamma=params["gamma"],
-    buffer_size=params["buffer_size"],
-    exploration_fraction=params["exploration_fraction"],
-    exploration_final_eps=params["exploration_final_eps"],
-    target_update_interval=params["target_update_interval"],
-    train_freq=params["train_freq"],
-    learning_starts=params["learning_starts"],
-    batch_size=params["batch_size"],
+    buffer_size=params.get("buffer_size", 10000),
+    learning_starts=params.get("learning_starts", 1000),
+    batch_size=params.get("batch_size", 32),
+    tau=params.get("tau", 1.0),
+    train_freq=params.get("train_freq", 4),
+    target_update_interval=params.get("target_update_interval", 1000),
     verbose=1,
 )
 
+# === CALLBACK Y ENTRENAMIENTO ===
+save_dir = params["save_dir"]
+os.makedirs(save_dir, exist_ok=True)
+callback = CustomWandbCallback(check_freq=params["check_freq"], save_path=save_dir)
+
 start_time = time.time()
-model.learn(total_timesteps=params["step"], callback=reward_callback)
-end_time = time.time()
+model.learn(total_timesteps=params["steps"], callback=callback)
+training_time = time.time() - start_time
 
-# === EVALUACIÓN ===
-mean_reward, std_reward = evaluate_policy(model, env, n_eval_episodes=params["n_eval_episodes"])
-print(f"\nRecompensa promedio: {mean_reward}, desviación estándar: {std_reward}")
-print(f"Tiempo total de entrenamiento: {end_time - start_time:.2f} segundos")
+print(f"Tiempo total de entrenamiento: {training_time:.2f} segundos")
 
+# === LOG FINAL EN WANDB ===
 wandb.log({
-    "mean_reward_eval": mean_reward,
-    "std_reward_eval": std_reward,
-    "training_time_seconds": end_time - start_time
-}, step=params["step"])
+    "training_time_seconds": training_time
+}, step=params["steps"])
 
+# === CIERRE ===
 env.close()
 wandb.finish()

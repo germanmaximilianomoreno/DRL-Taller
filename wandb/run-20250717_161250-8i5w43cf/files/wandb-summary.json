@@ -1,0 +1,1 @@
+{"mean_reward":1,"training_time_seconds":130.3797948360443,"_timestamp":1.7527797050378294e+09,"_runtime":134.6161117,"mean_reward_eval":0.82,"std_reward_eval":0.3841874542459709,"steps":99976,"_step":100000,"_wandb":{"runtime":134}}

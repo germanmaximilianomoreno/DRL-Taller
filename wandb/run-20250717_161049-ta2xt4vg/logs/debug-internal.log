@@ -1,0 +1,7 @@
+{"time":"2025-07-17T16:10:49.7048912-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250717_161049-ta2xt4vg\\logs\\debug-core.log"}
+{"time":"2025-07-17T16:10:50.0348006-03:00","level":"INFO","msg":"stream: created new stream","id":"ta2xt4vg"}
+{"time":"2025-07-17T16:10:50.0348006-03:00","level":"INFO","msg":"stream: started","id":"ta2xt4vg"}
+{"time":"2025-07-17T16:10:50.0348006-03:00","level":"INFO","msg":"handler: started","stream_id":"ta2xt4vg"}
+{"time":"2025-07-17T16:10:50.0348006-03:00","level":"INFO","msg":"sender: started","stream_id":"ta2xt4vg"}
+{"time":"2025-07-17T16:10:50.0348006-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"ta2xt4vg"}
+{"time":"2025-07-17T16:10:50.4935062-03:00","level":"INFO","msg":"Starting system monitor"}

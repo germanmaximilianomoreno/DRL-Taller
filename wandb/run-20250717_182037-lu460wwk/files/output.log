@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "d:\Proyectos\Taller_DRL\frozenlake\frozenlake_a2c\frozenlake_a2c.py", line 56, in <module>
+    env = DummyVecEnv([env])
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 31, in __init__
+    self.envs = [_patch_env(fn()) for fn in env_fns]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\germa\AppData\Local\Programs\Python\Python311\Lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 31, in <listcomp>
+    self.envs = [_patch_env(fn()) for fn in env_fns]
+                            ^^^^
+TypeError: 'Monitor' object is not callable

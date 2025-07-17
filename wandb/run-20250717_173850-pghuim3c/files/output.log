@@ -1,0 +1,6 @@
+Using cpu device
+Traceback (most recent call last):
+  File "d:\Proyectos\Taller_DRL\frozenlake\frozenlake_ppo\frozenlake_ppo.py", line 78, in <module>
+    save_dir = params["save_dir"]
+               ~~~~~~^^^^^^^^^^^^
+KeyError: 'save_dir'
