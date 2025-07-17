@@ -20,7 +20,7 @@ else:
 
 # === INICIALIZAR WANDB ===
 wandb.init(
-    project="prueba_maxi",
+    project="frozenlake_rl",
     name="DQN_FrozenLake",
     config=params
 )
