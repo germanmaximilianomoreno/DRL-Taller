@@ -1,6 +1,6 @@
-# Aprendizaje por Refuerzo con DQN, PPO y A2C en CartPole y FrozenLake 🎯
+# Aprendizaje por Refuerzo con DQN, PPO y A2C en el entorno FrozenLake 🎯
 
-Este proyecto entrena un agente usando el algoritmo DQN, PPO y A2C para resolver el entorno CartPole-v1 y FrozenLake usando Stable-Baselines3.
+Este proyecto realiza una comparación de los algoritmos DQN, PPO y A2C para resolver el entorno FrozenLake usando librerías como Stable-Baselines3 y Gym.
 
 ## Requisitos
 
