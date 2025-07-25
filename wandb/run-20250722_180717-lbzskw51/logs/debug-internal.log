@@ -1,0 +1,18 @@
+{"time":"2025-07-22T18:07:17.7130149-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"d:\\Proyectos\\Taller_DRL\\wandb\\run-20250722_180717-lbzskw51\\logs\\debug-core.log"}
+{"time":"2025-07-22T18:07:18.0799097-03:00","level":"INFO","msg":"stream: created new stream","id":"lbzskw51"}
+{"time":"2025-07-22T18:07:18.0799097-03:00","level":"INFO","msg":"stream: started","id":"lbzskw51"}
+{"time":"2025-07-22T18:07:18.0799097-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"lbzskw51"}
+{"time":"2025-07-22T18:07:18.0799097-03:00","level":"INFO","msg":"handler: started","stream_id":"lbzskw51"}
+{"time":"2025-07-22T18:07:18.0799097-03:00","level":"INFO","msg":"sender: started","stream_id":"lbzskw51"}
+{"time":"2025-07-22T18:07:18.5975854-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-22T18:08:07.3977996-03:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-07-22T18:09:18.822387-03:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-22T18:12:16.0648483-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-22T18:12:16.0648483-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-22T18:12:17.0748426-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.7645947,"progress":"1.1MB/3.6MB"},{"desc":"uploading config.yaml","runtime_seconds":0.5073135,"progress":"940B/940B"}],"total_operations":2}}
+{"time":"2025-07-22T18:12:18.67487-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-22T18:12:19.6818202-03:00","level":"INFO","msg":"stream: closing","id":"lbzskw51"}
+{"time":"2025-07-22T18:12:19.6818202-03:00","level":"INFO","msg":"handler: closed","stream_id":"lbzskw51"}
+{"time":"2025-07-22T18:12:19.6818202-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lbzskw51"}
+{"time":"2025-07-22T18:12:19.6818202-03:00","level":"INFO","msg":"sender: closed","stream_id":"lbzskw51"}
+{"time":"2025-07-22T18:12:19.6818202-03:00","level":"INFO","msg":"stream: closed","id":"lbzskw51"}

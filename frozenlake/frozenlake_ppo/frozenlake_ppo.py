@@ -23,7 +23,7 @@ else:
 # === INICIAR WANDB ===
 wandb.init(
     project="frozenlake_rl",
-    name="PPO_FrozenLake_maxi",
+    name="PPO_FrozenLake_maxi_100k",
     config=params
 )
 
